@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>496</width>
+    <height>409</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="1">
+     <widget class="QPushButton" name="BD">
+      <property name="text">
+       <string>подключиться к БД</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QTabWidget" name="vybor">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="bibleteka">
+       <attribute name="title">
+        <string>Добавление читателей</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QComboBox" name="peopleBox"/>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QPushButton" name="add">
+          <property name="text">
+           <string>Записать</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="booksBox"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="dropVolounter">
+       <attribute name="title">
+        <string>Удаление волонтера</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="1">
+         <widget class="QComboBox" name="volBox"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="drop">
+          <property name="text">
+           <string>Удалить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Изменить имя читателя</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QComboBox" name="chitBox"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLineEdit" name="volunteerName"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="editName">
+          <property name="text">
+           <string>изменить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="editEvent">
+       <attribute name="title">
+        <string/>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="1" column="0">
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QDateTimeEdit" name="dateTimeEdit"/>
+        </item>
+        <item row="5" column="0">
+         <widget class="QComboBox" name="eventBox"/>
+        </item>
+        <item row="7" column="0">
+         <widget class="QTextEdit" name="textEdit"/>
+        </item>
+        <item row="8" column="0">
+         <widget class="QPushButton" name="edit">
+          <property name="text">
+           <string>Изменить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Название события</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Тип события</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Время события</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Описание события</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>496</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
